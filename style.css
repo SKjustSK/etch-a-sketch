@@ -1,0 +1,14 @@
+body {
+    margin: 0px;
+}
+
+#container {
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.draw {
+    aspect-ratio: 1 / 1;
+    flex-basis: 6.25%;
+}
