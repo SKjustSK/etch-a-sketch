@@ -1,14 +1,58 @@
-body {
-    margin: 0px;
+#page {
+    height: 100vh;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-weight: 600;
+    padding: 30px;
+}
+
+.interface {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.controls {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    flex: 1;
+}
+
+.controls .clear,
+.controls .size {
+    padding: 10px 50px;
+    font-size: 15px;
+    background-color: aqua;
+    border: 2px solid black;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+
+.controls .clear:hover,
+.controls .size:hover {
+    transform: scale(1.1);
 }
 
 #container {
-    height: 100vh;
     display: flex;
+    justify-content:     center;
+    align-items: center;
+    flex: 1;
+    margin: 0 150px;
     flex-wrap: wrap;
+    border: solid black;
 }
 
 .draw {
     aspect-ratio: 1 / 1;
-    flex-basis: 6.25%;
+    /*temp*/
 }
+
